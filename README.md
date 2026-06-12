@@ -1,16 +1,14 @@
 # Ecosphere Sim 🌿🦌
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Simulation](https://img.shields.io/badge/Ecosystem-Simulation-green?style=for-the-badge)
-![AI Concepts](https://img.shields.io/badge/AI-AgentBasedSystems-blueviolet?style=for-the-badge)
+![Simulation](https://img.shields.io/badge/Agent-Based-Simulation-green?style=for-the-badge)
+![Visualization](https://img.shields.io/badge/Real-Time-Visualization-blueviolet?style=for-the-badge)
 
 ## 🚀 Overview
 
-Ecosphere Sim is a grid-based artificial ecosystem simulator where autonomous herbivores move dynamically inside a digital environment populated with plants.
+Ecosphere Sim is a grid-based ecosystem simulation where autonomous herbivores move randomly within a plant-populated digital environment.
 
-The simulation demonstrates foundational concepts behind agent-based systems, emergent behavior, environmental modeling, and real-time system evolution.
-
-Unlike traditional deterministic applications, every simulation run evolves differently due to probabilistic movement and dynamic interactions between entities.
+The project demonstrates foundational concepts in agent-based modeling, simulation loops, probabilistic movement, and real-time visualization. Each simulation run produces unique outcomes due to randomized agent behavior.
 
 ---
 
@@ -19,55 +17,52 @@ Unlike traditional deterministic applications, every simulation run evolves diff
 - Python
 - NumPy
 - Matplotlib
-- Randomized Simulation Logic
+- Random Module
+- Simulation Logic
 
 ---
 
 ## 📊 Features
 
 - 2D grid-based environment
-- Autonomous herbivore movement
-- Dynamic plant population
-- Real-time ecosystem visualization
-- Randomized behavioral simulation
-- Emergent system evolution
+- Autonomous herbivore agents
+- Randomized movement behavior
+- Plant-populated world representation
+- Real-time simulation visualization
+- Dynamic agent positioning
+- Multiple unique simulation outcomes
 
 ---
 
 ## ⚡ Core Concepts Demonstrated
 
 | Concept | Purpose |
-|---|---|
-| 2D Grids | Environmental representation |
-| Agents | Autonomous entities |
-| Simulation Loops | System evolution |
-| Random Behavior | Probabilistic movement |
-| Visualization | Real-time rendering |
-| State Systems | Encoded world dynamics |
+|----------|----------|
+| 2D Grids | Represent the environment |
+| Agents | Autonomous moving entities |
+| Simulation Loops | Drive system evolution over time |
+| Random Behavior | Generate non-deterministic outcomes |
+| Visualization | Display world state in real time |
+| State Representation | Encode environmental information |
 
 ---
 
 ## 🌌 Why This Project Is Interesting
 
-Unlike recommendation systems or classifiers:
+Unlike traditional deterministic programs, the simulation does not produce the exact same outcome every time.
 
 ```txt
-Same input ≠ Same output
+Same setup ≠ Same simulation outcome
 ```
 
-Every simulation evolves differently based on random interactions and environmental states.
+The randomized movement of agents creates different environmental patterns during each execution.
 
-This demonstrates the concept of:
+This introduces important concepts used in:
 
-```txt
-Emergent Behavior
-```
-
-A foundational idea in:
 - Artificial Intelligence
+- Agent-Based Modeling
 - Biological Simulations
 - Game Development
-- Economics
 - Complex Systems Research
 
 ---
@@ -76,35 +71,39 @@ A foundational idea in:
 
 Simulation starts  
 ↓  
-Plants populate environment  
+Plants are distributed across the grid  
 ↓  
-Herbivores move randomly  
+Herbivores are placed randomly  
 ↓  
-Environment evolves dynamically  
+Agents move through the environment  
 ↓  
-Unique ecosystem patterns emerge
-
----
-
-## 🔮 Future Improvements
-
-- Predator-prey systems
-- Energy and hunger mechanics
-- Reproduction systems
-- Genetic evolution
-- Weather simulation
-- Reinforcement learning agents
-- Interactive GUI controls
+World state updates continuously  
+↓  
+Unique movement patterns emerge
 
 ---
 
 ## 📘 Key Learnings
 
-- Agent-based modeling
-- Environmental simulation
-- Emergent behavior systems
-- Real-time visualization
-- Simulation architecture design
+- Agent-based system design
+- Grid-based world modeling
+- Simulation architecture
+- Randomized behavior systems
+- Data visualization with Matplotlib
+- State representation techniques
+
+---
+
+## 🔮 Future Improvements
+
+- Plant consumption mechanics
+- Energy and hunger systems
+- Plant regrowth
+- Predator-prey interactions
+- Reproduction mechanics
+- Ecosystem balancing
+- Interactive GUI controls
+- Reinforcement learning agents
 
 ---
 
