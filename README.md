@@ -1,112 +1,102 @@
-# Ecosphere Sim 🌿🦌
+# 🌿 Ecosphere Sim
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Simulation](https://img.shields.io/badge/Agent-Based-Simulation-green?style=for-the-badge)
-![Visualization](https://img.shields.io/badge/Real-Time-Visualization-blueviolet?style=for-the-badge)
+**A Grid-Based Agent Simulation Using Python, NumPy, and Matplotlib**
 
-## 🚀 Overview
+Ecosphere Sim is a lightweight, grid-based simulation that explores how independently moving agents behave inside a shared environment. It uses a two-dimensional world containing plants and herbivore agents, with random movement and visual tracking of spatial exploration.
 
-Ecosphere Sim is a grid-based ecosystem simulation where autonomous herbivores move randomly within a plant-populated digital environment.
+The project is an introduction to agent-based modelling, stochastic processes, simulation design, and scientific visualisation.
 
-The project demonstrates foundational concepts in agent-based modeling, simulation loops, probabilistic movement, and real-time visualization. Each simulation run produces unique outcomes due to randomized agent behavior.
+## ✨ Features
 
----
+- **Grid-based environment:** Represents a world as a 20 × 20 numerical grid.
+- **Plant distribution:** Places plants at randomly selected grid locations.
+- **Autonomous agents:** Simulates herbivores that move independently.
+- **Boundary handling:** Keeps agents inside the environment.
+- **Movement tracking:** Records agent visits to individual grid cells.
+- **Exploration analysis:** Measures the number of unique cells visited.
+- **Visual analytics:** Generates plots for movement, spatial visit frequency, and the final environment.
+- **Reproducible experiments:** Uses a fixed random seed for repeatable results.
 
-## 🧠 Technologies Used
+## 🧠 Technologies
 
-- Python
-- NumPy
-- Matplotlib
-- Random Module
-- Simulation Logic
+| Technology | Purpose |
+|---|---|
+| Python | Simulation logic |
+| NumPy | Grid and numerical operations |
+| Matplotlib | Graphs and visualisation |
+| Python `random` | Agent movement choices |
+| Google Colab / Jupyter Notebook | Interactive execution |
 
----
+## ⚙️ How It Works
 
-## 📊 Features
+1. Initialise a two-dimensional grid.
+2. Distribute plants across the environment.
+3. Place herbivore agents at random locations.
+4. Move each agent using random horizontal and vertical steps.
+5. Apply boundary constraints to keep agents inside the grid.
+6. Record visited cells and cumulative movement.
+7. Generate graphs and summarise the simulation.
 
-- 2D grid-based environment
-- Autonomous herbivore agents
-- Randomized movement behavior
-- Plant-populated world representation
-- Real-time simulation visualization
-- Dynamic agent positioning
-- Multiple unique simulation outcomes
+## 📊 Visualisations
 
----
+The simulation generates three figures:
 
-## ⚡ Core Concepts Demonstrated
+- `movement_over_time.png`: Tracks the growth in the number of unique cells explored.
+- `visited_cells_heatmap.png`: Shows the spatial frequency of agent visits.
+- `simulation_final.png`: Displays plant locations and the final herbivore positions.
 
-| Concept | Purpose |
-|----------|----------|
-| 2D Grids | Represent the environment |
-| Agents | Autonomous moving entities |
-| Simulation Loops | Drive system evolution over time |
-| Random Behavior | Generate non-deterministic outcomes |
-| Visualization | Display world state in real time |
-| State Representation | Encode environmental information |
+These visualisations describe agent movement and spatial exploration. They do not measure population health or ecological stability.
 
----
+## 🚀 Getting Started
 
-## 🌌 Why This Project Is Interesting
+### Install dependencies
 
-Unlike traditional deterministic programs, the simulation does not produce the exact same outcome every time.
-
-```txt
-Same setup ≠ Same simulation outcome
+```bash
+pip install numpy matplotlib
 ```
 
-The randomized movement of agents creates different environmental patterns during each execution.
+### Run the project
 
-This introduces important concepts used in:
+Open `ecosphere_sim version 1.ipynb` in Google Colab or Jupyter Notebook, then execute the simulation cells.
 
-- Artificial Intelligence
-- Agent-Based Modeling
-- Biological Simulations
-- Game Development
-- Complex Systems Research
+### Generated outputs
 
----
+The notebook saves the graphs as PNG files. Download them and place them in the repository if you want them to appear in the README.
 
-## 💬 Example Simulation Flow
+## 📐 Current Model
 
-Simulation starts  
-↓  
-Plants are distributed across the grid  
-↓  
-Herbivores are placed randomly  
-↓  
-Agents move through the environment  
-↓  
-World state updates continuously  
-↓  
-Unique movement patterns emerge
+| Component | Current behaviour |
+|---|---|
+| Environment | Fixed-size 2D grid |
+| Plants | Static locations |
+| Herbivores | Random movement |
+| Boundaries | Agents remain within the grid |
+| Metrics | Unique cells visited and movement count |
+| Visualisation | Final state and spatial exploration |
 
----
+**Current limitation:** Plants are not consumed, and agents do not have energy, reproduction, or survival mechanics. The present version is a basic agent-movement simulation rather than a complete ecological model.
 
-## 📘 Key Learnings
+## 🔬 Future Improvements
 
-- Agent-based system design
-- Grid-based world modeling
-- Simulation architecture
-- Randomized behavior systems
-- Data visualization with Matplotlib
-- State representation techniques
+- Plant consumption and regrowth
+- Herbivore energy and survival mechanics
+- Population changes over time
+- Configurable simulation parameters
+- Comparisons between random seeds and movement strategies
+- Experiments measuring how environmental changes affect agent behaviour
 
----
+## 🎯 Learning Outcomes
 
-## 🔮 Future Improvements
-
-- Plant consumption mechanics
-- Energy and hunger systems
-- Plant regrowth
-- Predator-prey interactions
-- Reproduction mechanics
-- Ecosystem balancing
-- Interactive GUI controls
-- Reinforcement learning agents
-
----
+- Grid-based environment modelling
+- Agent-based simulation fundamentals
+- Randomised and stochastic behaviour
+- State tracking and numerical analysis
+- Scientific data visualisation
+- Reproducible computational experiments
 
 ## 👩‍💻 Author
 
-Mithravinda
+Mithravinda U
+
+**Project category:** Simulation & Complex Systems  
+**Repository:** [ecosphere-sim](https://github.com/MithravindaU/ecosphere-sim)
